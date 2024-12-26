@@ -1,4 +1,21 @@
 #!/bin/bash
+###################
+#About: This Script will check the users who are having access to repos
+#
+#Input: You have to export your username,token and Reponame,Repoowner details
+#
+#Owner:Srikanth
+#
+####################
+
+function helper {
+    expected_cmd_args=2
+    if [ $# -ne $expected_cmd_args ]; then
+        echo "Please execute the script with the required command arguments."
+        echo "asd"
+    fi
+}
+
 
 # GitHub API URL
 API_URL="https://api.github.com"
